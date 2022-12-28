@@ -1,0 +1,361 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  background-image: url(./img/background.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 45px 8%;
+}
+.logo {
+  color: white;
+  font-size: 35px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.logo span {
+  color: #f9004d;
+}
+.logo:hover span{color: white;} 
+
+.logo:hover {color: #f9004d;} 
+nav ul a {
+  list-style: none;
+  display: inline-block;
+  padding: 10px 25px;
+  color: white;
+}
+nav ul a:hover {
+  cursor: pointer;
+  color: #f9004d;
+  transition: 0.4s;
+}
+nav ul a:first-child {
+  color: #f9004d;
+}
+
+nav button {
+  border: none;
+  color: white;
+  background-color: #f9004d;
+  font-weight: bold;
+  border: 2px solid transparent;
+  padding: 10px 25px;
+  border-radius: 30px;
+  transition: 0.4s;
+}
+
+nav button:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translatey(-50%);
+}
+h1 {
+  color: white;
+  margin: 20px 0px 20px;
+  font-size: 75px;
+}
+h1 span {
+  color: #f9004d;
+}
+
+h3 {
+  color: white;
+  font-size: 25px;
+  margin-bottom: 50px;
+}
+h4 {
+  color: #fcfc;
+  font-size: 24px;
+}
+
+.newslatter form {
+  width: 380px;
+  max-width: 100%;
+  position: relative;
+}
+.newslatter form input:first-child {
+  display: inline-block;
+  width: 100%;
+  padding: 14px 130px 14px 15px;
+  border: 2px solid #f9004d;
+  outline: none;
+  border-radius: 30px;
+}
+.newslatter form input:last-child {
+  position: absolute;
+  display: inline-block;
+  right: 6px;
+  top: 5px;
+  outline: none;
+  border: none;
+  padding: 10px 30px;
+  color: white;
+  background-color: #f9004d;
+  border-radius: 30px;
+  font-weight: 500;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.705);
+  cursor: pointer;
+}
+.newslatter form input:last-child:hover{
+  background-color: transparent;
+  color: #f9004d;
+  border: 2px solid #f9004d;
+}
+
+
+.about-me {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #191919;
+  padding-top: 100px;
+  padding-left: 11%;
+  padding-right: 11%;
+  width: 100%;
+  height: 760px;
+}
+.profile-pic {
+  width: 400px;
+  height: auto;
+}
+
+.about-me-details {
+  display: flex;
+  flex-direction: column;
+  margin-left: 75px;
+}
+.about-me-title {
+  color: white;
+  font-size: 72px;
+  margin-bottom: 25px;
+}
+
+.about-me-job-title {
+  font-size: 24px;
+  color: white;
+  margin-bottom: 25px;
+  letter-spacing: 2px;
+}
+
+.about-me-job-title span {
+  color: #f9004d;
+}
+
+.about-me-paragraph {
+  max-width: 100%;
+  color: #fcfc;
+  line-height: 25px;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+  font-size: 18px;
+}
+
+.lets-talk-btn {
+  width: 125px;
+  height: 40px;
+  outline: none;
+  border: 2px solid transparent;
+  padding: 10px 30px;
+  color: white;
+  background-color: #f9004d;
+  border-radius: 30px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.5s;
+  text-decoration: none;
+}
+.lets-talk-btn:hover {
+  background-color: #f9004f00;
+  border: 2px solid #f9004d;
+}
+
+.our-services{
+  background-color: #101010;
+  padding-top: 100px;
+  width: 100%;
+  padding-left: 11%;
+  padding-right: 11%;
+  height: 680px;
+  
+}
+.our-services h1{
+  font-size: 75px;
+  color: white;
+  text-align: center;
+ 
+}
+
+.cards{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+
+}
+.card-1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 365px;
+  width: 335px;
+  background-color: #191919;
+  margin-right: 25px;
+  border-radius: 15px;
+  padding: 10px 25px;
+  overflow: hidden;
+  text-align: center;
+}
+.card-1 i{
+  color: #f9004d;
+  font-size: 50px;
+  margin-bottom: 25px;
+}
+
+.card-title{
+  font-size: 24px;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.card-1 p{
+  color: #fcfc;
+  font-size: 17px;
+  margin-bottom: 25px;
+  line-height: 24px;
+
+}
+.readme-btn{
+  width: 140px;
+  height: 40px;
+  color: white;
+  background-color: #f9004d;
+  font-weight: bold;
+  font-size: 14px;
+  outline: none;
+  border: 2px solid transparent;
+  padding: 10px 30px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.5s;
+  text-decoration: none;
+  
+}
+.readme-btn:hover {
+  background-color: #f9004f00;
+  border: 2px solid #f9004d;
+}
+.hire-me{
+  background-color: #191919;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.hire-me-title{
+  color: white;
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+
+.hire-me-btn{
+  width: 140px;
+  height: 40px;
+  color: white;
+  background-color: #f9004d;
+  font-weight: bold;
+  font-size: 14px;
+  outline: none;
+  border: 2px solid transparent;
+  padding: 10px 30px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.hire-me-btn:hover {
+  background-color: #f9004f00;
+  border: 2px solid #f9004d;
+}
+.auther{
+  position: relative;
+  background-color: #101010;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.auther-name{
+  color: white;
+  font-size: 30px;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+
+.auther-paragraph{
+  color: white;
+  font-size: 18px;
+  margin-bottom: 25px;
+  width: 525px;
+  text-align: center;
+  line-height: 25px;
+}
+.social-media{
+  display: flex;
+
+
+}
+.social-media a{
+  background-color: #f9004d;
+  color: white;
+  border-radius: 50%;
+  font-size: 22px;
+  height: 50px;
+  width: 50px;
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition:0.1s;
+}
+.social-media a:hover{
+  transform: scale(1.1);
+}
+
+.copyright{
+  position: absolute;
+  bottom: 0;
+  font-size: 14px;
+  color: #f9004d;
+  
+}
